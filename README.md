@@ -21,12 +21,6 @@ docker run -p 8080:8080 -e API_TOKEN1=:GithubToken :imageName
 
 To run on GCP, push the Docker image to GCP Artifact registry and deploy on Cloud run. Specifiy secret as the GitHub token and expose as env. 
 
-**Improvement ideas** 
-
-* For bigger teams it takes some time to gather the metrics time to close and GitHub Checks on merge - up to a couple of minutes. Threadpools using multiple tokens can  greatly speed up this process.
-* If more metrics would be added, a new script accessing the correct GitHub api endpoint would need to be added, with smaller changes in app.py and resultscripts.js. 
-* The limits for identified repositories can be changed. As mentioned above, the limits are based on the 6 interviewed team's data, and might need to be changed to better accomodate other teams.  
-
 ## Metrics used: 
 
 - **Documentation Availability**: This metric assesses the availability of essential project documentation, inspired by the quantitative criteria of Engineering Baseline's ADR-EA-10 and OSPO’s recommended inner source documentation set. The total repository document set evaluated by this metric includes README files, License, Code owners, Contributing guidelines, and Pull_request_template. Additionally, the presence of links leading to further documentation contributes to the total score. Simple metric, the higher the better for inner source purposes. 
@@ -38,6 +32,12 @@ Simple metric, the higher the better.
 
 - **Visibility**: This metric measures the level of engagement and interaction developers have with a repository, as indicated by the number of forks, stars, and watches a repository accumulates. A high number of forks could suggest the reusability of the code, as it shows that other teams are repurposing or testing the code for their own projects. Conversely, a high number of stars and watches can indicate active interest and monitoring of the repository's updates and activities, reflecting an environment of knowledge sharing. Simple metric, the higher the better for inner source purposes. 
 
+**Further development** 
+
+* Enable the use for non-enterprise organization and/or input of specific repositories to be analyzed. 
+* For bigger teams it takes some time to gather the metrics time to close and GitHub Checks on merge - up to a couple of minutes. Threadpools using multiple tokens can  greatly speed up this process.
+* If more metrics would be added, a new script accessing the correct GitHub api endpoint would need to be added, with smaller changes in app.py and resultscripts.js. 
+* The limits for identified repositories can be changed. As mentioned above, the limits are based on the 6 interviewed team's data, and might need to be changed to better accomodate other teams.  
   
 
 
