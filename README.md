@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 ## Purpose of application
 
 An Inner source self assessment application based on the results from Alexanders Malm's thesis work 2023, deployed on GCP. IKEA-specific data and information have been deleted. The current values of the identidied outlier metrics are psuedo-randomly chosen.
-=======
+
 A proof of concept for anInner source self assessment application based on the results from Alexanders Malm's thesis work 2023, initially deployed on GCP. IKEA-specific data and information have been deleted. The current values of the identidied outlier metrics are psuedo-randomly chosen. Based on the finding during the thesis work at IKEA https://lup.lub.lu.se/student-papers/search/publication/9120709.
 >>>>>>> refs/remotes/origin/master
 
