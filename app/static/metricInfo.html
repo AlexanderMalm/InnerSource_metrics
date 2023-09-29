@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link rel="stylesheet" href="/static/styleInfo.css">
+</head>
+<body>
+    
+    <h2>Metrics Description:</h2>
+    
+        
+            <strong>Documentation Availability:<br></strong> This metric assesses the availability and accessibility of essential project documentation, 
+            defined by the quantitative criteria of Engineering Baseline's ADR-EA-10 and the recommended inner source documentation set. The total repository 
+            document set evaluated by this metric includes README files, License, Code owners, Contributing guidelines, and Pull_request_template. Additionally, 
+            the presence of links leading to further documentation contributes to the total score. Documentation was identified as the metric most strongly 
+            correlated with IKEA's inner source goals. The study underscores the importance and significant challenges of documentation in inner source development.
+        
+        <br><br>
+        
+            <strong>GitHub Check failrate on merge:<br></strong> This metric gauges the acceptance of pipeline failures by scrutinizing the rate of failures in automated 
+            pipeline testing using GitHub Actions. It is calculated by dividing the number of failed and cancelled jobs by the total number of jobs on merged PRs. A higher 
+            failrate might be tolerable within a closed development team familiar with their product's intrinsic features and tests, but an inner source project should aim 
+            for a low failure rate. Research into open source development indicates that pipeline testing boosts productivity among both external and core developers. However, 
+            an excessively rigorous test suite could deter the merging of external PRs. Therefore, an inner source project should aim for a low failrate while maintaining an 
+            effective and transparent test suite.
+        
+        <br><br>
+        
+            <strong>Time-to-close:<br></strong> This metric represents the median time from the creation of a PR to its closure, either by merging or simply closing without 
+            merging. A high time-to-close metric could indicate potential challenges in development practices or engagement with GitHub processes, or for individual repositories 
+            simply not prioritated functionalities. A very low time-to-close could point to extensive use of bots or an inadequate review process. In an inner source context, 
+            transparent and efficient review processes are crucial for project success, and deficiencies may deter contributions from outside the team.
+        
+        <br><br>
+        
+            <strong>Visibility:<br></strong> This metric quantifies the level of engagement and interaction developers have with a repository, as shown by the number of forks, 
+            stars, and watches a repository accumulates. A high number of forks could signal the reusability of the codebase, as it indicates that other teams are repurposing 
+            the code for their own projects. Conversely, a high number of stars and watches can denote active interest in and monitoring of the repository's updates and activities, 
+            demonstrating an environment of knowledge sharing. A wide range of stakeholders has been proven vital for an inner source project's success. Hence, measures such as coding 
+            events, workshops, or other activities to increase project visibility and recognition of its technical solutions are recommended.
+        
+            <br>
+            <div id="toolbar">
+                <button onclick="window.location.href='result_page.html'">Back to Result</button>
+                <button onclick="window.location.href='index.html'">New search</button>
+            </div>
+        </body>
+        </html>
