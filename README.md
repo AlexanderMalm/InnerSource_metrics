@@ -2,6 +2,8 @@ A proof of concept for anInner source self assessment application based on the r
 
 Developed after the thesis was finished, so the front-end is a bit sloppy but it serves the purpose. The app calculates a team's total metric scores as well as identifies repositores with characteristics that might indicate protential or problems for an inner sourced development. The outlier treshholds are based on the data gathered from the repositories of the 6 teams interviewed for the thesis.
 
+Currently built for enterprise GitHub usage. 
+
 Plug-n-play, enter team name as specified on GitHub, select repositories, and get the results. Repositories that are not a part of a team can not be used for the analysis.  
 
 
