@@ -1,3 +1,5 @@
+## Purpose of application
+
 An Inner source self assessment application based on the results from Alexanders Malm's thesis work 2023, deployed on GCP. IKEA-specific data and information have been deleted. The current values of the identidied outlier metrics are psuedo-randomly chosen.
 
 Developed after the thesis was finished, so the front-end is a bit sloppy but it serves the purpose. The app calculates a team's total metric scores as well as identifies repositores with characteristics that might indicate protential or problems for an inner sourced development. The outlier treshholds are based on the data gathered from the repositories of the 6 teams interviewed for the thesis.
@@ -5,7 +7,7 @@ Developed after the thesis was finished, so the front-end is a bit sloppy but it
 Plug-n-play, enter team name as specified on GitHub, select repositories, and get the results. Repositories that are not a part of a team can not be used for the analysis.  
 
 
-**Installation** 
+## Installation 
 
 The app can easily be run locally by running Docker and creating an image of the dockerfile. To install and run the Docker image, use the following command:
 
