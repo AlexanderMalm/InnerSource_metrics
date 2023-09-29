@@ -1,4 +1,4 @@
-An Inner source self assessment application based on the results from Alexanders Malm's thesis work 2023, deployed on GCP. IKEA-specific data and information have been deleted. The current values of the identidied outlier metrics are psuedo-randomly chosen. TEST
+An Inner source self assessment application based on the results from Alexanders Malm's thesis work 2023, deployed on GCP. IKEA-specific data and information have been deleted. The current values of the identidied outlier metrics are psuedo-randomly chosen.
 
 Developed after the thesis was finished, so the front-end is a bit sloppy but it serves the purpose. The app calculates a team's total metric scores as well as identifies repositores with characteristics that might indicate protential or problems for an inner sourced development. The outlier treshholds are based on the data gathered from the repositories of the 6 teams interviewed for the thesis.
 
