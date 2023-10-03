@@ -23,7 +23,7 @@ app = Flask(__name__, static_url_path='/static', static_folder='static')
 app.secret_key = 'test'
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
-days = 90
+days = 90   #data from the last 90 days
 api_token1 = os.environ.get('GH_TOKEN')
 
 
