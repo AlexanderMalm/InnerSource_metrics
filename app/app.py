@@ -56,9 +56,9 @@ def send_html(path):
 @app.route('/getRepos', methods=['POST'])
 def getRepos():
     key = request.json['key']
-    repositories = get_repositories(api_token2, key)
+    repositories = get_repositories(api_token1, key)
     session['repositories'] = repositories
-    repoToClient = [repo.replace('https://github.com/ingka-group-digital/', '') for repo in repositories]
+    repoToClient = [repo.replace('https://github.com//', '') for repo in repositories]  #needs correct endpoint
     
     return jsonify({"Team_name": key, "repositories": repoToClient}), 200
 
@@ -72,9 +72,9 @@ def process():
     print("Getting ttc")
     ttc = get_time_to_close(api_token1, repositories, days)
     print("Getting availability")
-    availability = get_document_availability(api_token2, repositories)
+    availability = get_document_availability(api_token1, repositories)
     print("Getting checks")
-    checks = get_checks(api_token2, repositories, days)
+    checks = get_checks(api_token1, repositories, days)
 
     combined_data = combine_data(key, availability, visibility, ttc, checks, len(repositories))
     print(combined_data)
