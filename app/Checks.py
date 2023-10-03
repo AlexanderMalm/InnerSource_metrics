@@ -28,7 +28,7 @@ def get_checks(api_token, repositories, days):
         while has_more_data:
             has_more_data = False
 
-            pulls_url = f'https://api.github.com/repos/ingka-group-digital/{repo}/pulls'
+            pulls_url = f'https://api.github.com/repos//{repo}/pulls' #needs a correct endpoint
             
             params = {
                 'state': 'closed',

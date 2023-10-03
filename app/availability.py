@@ -8,7 +8,7 @@ GITHUB_API_URL = "https://api.github.com"
 
 def get_repo_contents(api_token, repo, path=''):
     headers = {'Authorization': f'token {api_token}', 'Accept': 'application/vnd.github+json'}
-    url = f'{GITHUB_API_URL}/repos/ingka-group-digital/{repo}/contents/{path}'
+    url = f'{GITHUB_API_URL}//{repo}/contents/{path}' #needs changes to a correct endpoint
     response = requests.get(url, headers=headers)
     return response.json() if response.status_code == 200 else []
 

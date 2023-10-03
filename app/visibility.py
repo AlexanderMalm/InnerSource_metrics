@@ -18,7 +18,7 @@ def get_visibility(api_token, repositories):
        
         print(f"  Processing repo: {repo}")
 
-        repo_info_url = f'https://api.github.com/repos/ingka-group-digital/{repo}'
+        repo_info_url = f'https://api.github.com/repos//{repo}' #needs correct endpoint
         response = requests.get(repo_info_url, headers=headers)
       
         if response.status_code == 200:

@@ -16,7 +16,7 @@ def get_team_id(api_token, team_name):
     page = 1
    
     while True:
-        url = f"{GITHUB_ENTERPRISE_URL}/orgs/ingka-group-digital/teams?per_page=100&page={page}"
+        url = f"{GITHUB_ENTERPRISE_URL}/orgs//teams?per_page=100&page={page}" #needs correct endpoint
         response = requests.get(url, headers=headers)
         if response.status_code != 200:
             print(f"Error fetching teams: {response.status_code}")

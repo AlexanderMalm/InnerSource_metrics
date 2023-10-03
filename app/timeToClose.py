@@ -27,7 +27,7 @@ def get_time_to_close(api_token, repositories, days):
             has_more_data = False
 
            
-            pulls_url = f"https://api.github.com/repos/ingka-group-digital/{repo}/pulls"
+            pulls_url = f"https://api.github.com/repos//{repo}/pulls" # needs correct endpoints
             params = {
                 'state': 'closed',
                 'sort': 'updated',
