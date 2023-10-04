@@ -44,6 +44,7 @@ def get_document_availability(api_token, repositories):
         github_contents = get_repo_contents(api_token, repo, '.github')
 
         file_scores = {}
+        
         link_scores = {}
 
         for file_name in file_names:
