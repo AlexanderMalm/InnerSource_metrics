@@ -8,7 +8,6 @@ The app calculates a team's total metric scores as well as identifies repositore
 Analysis requires repositories using GitHub Actions for CI/CD and developmental increments with GitHub Pull Requests.
 Currently built for Enterprise GitHub usage, work in progress to make it more generall.
 
-S
 
 Plug-n-play, enter team name as specified on GitHub, select repositories, and get the results. Repositories that are not a part of a team can not be used for the analysis.  
 
