@@ -56,11 +56,7 @@ def get_repositories(api_token, team_name):
        
         for repo in repo_batch:
             print(repo['html_url'])
-            #print("vafan!!")main_branch_url = f"{GITHUB_ENTERPRISE_URL}/repos/{repo['full_name']}/branches/main"
-            #main_branch_response = requests.get(main_branch_url, headers=headers)
-            #if main_branch_response.status_code != 200:
-           #     print("vafan0")
-          #      continue
+            
             pull_requests_url = f"{GITHUB_ENTERPRISE_URL}/repos/{repo['full_name']}/pulls?state=all"
             pull_requests_response = requests.get(pull_requests_url, headers=headers)
             if pull_requests_response.status_code != 200:
